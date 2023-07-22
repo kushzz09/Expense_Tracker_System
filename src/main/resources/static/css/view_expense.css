@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(209, 207, 205);
+}
+
+.one {
+  font-family: "Raleway", sans-serif;
+  font-size: xx-large;
+  color: rgb(54, 50, 50);
+  margin-top: 50px;
+}
+
+.two {
+  font-family: "Raleway", sans-serif;
+  font-size: x-large;
+  color: rgb(54, 50, 50);
+}
+
+.wrapper{
+	text-align:center;
+	font-size:medium;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+}
+
+.fa-solid {
+  margin-top: 3px;
+  margin-left: 5px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  color: rgb(54, 50, 50);
+  cursor: pointer;
+}
+
+.input-wrapper input {
+  background-color: #fffcfc;
+  border: none;
+  margin: 5px 0 10px 180px;
+  padding: 13px 20px;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 2rem;
+  color: rgb(10, 10, 10);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.search {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 200px;
+  font-size: medium;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 15%;
+  margin-left: 170px;
+}
+
+.card {
+  width: 260px;
+  height: 240px;
+  margin-right: 100px;
+  background: linear-gradient(rgb(16, 86, 143), rgb(76, 130, 192));
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+button {
+  padding: 13px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #c42323;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+}
+
+.card-content .card-title {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.card-content .card-para {
+  color: inherit;
+  padding-top: 10px;
+  opacity: 0.8;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+.card-content .card-bottom {
+  padding-top: 10px;
+  text-align: end;
+}
+
+li a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5px;
+}
+
+li a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(8, 6, 6);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+}
+
+li a:hover:after {
+  margin-left: 5px;
+  width: 90%;
+}
+
+.container i {
+  position: relative;
+}
+
+.container span {
+  position: absolute;
+  height: 37px;
+  width: 70px;
+  font-size: 12px;
+  padding: 0 5px 5px 5px;
+  bottom: -40px;
+  left: 85%;
+  min-width: 15px;
+  color: white;
+  transform: translate(-40%, -50px);
+  line-height: 37px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(16, 86, 143);
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container i:hover span {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.container span:before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: rgb(16, 86, 143);
+  top: -6px;
+  left: 35%;
+  transform: translate(-10%) rotate(45deg);
+  z-index: -1;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  width: 100px;
+}
+
+.button1:hover {
+  background-color: #23c483;
+}
+
+.footer button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  margin-left: 74%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-decoration:none;
+}
+
+.footer button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.footer button:active {
+  transform: translateY(-1px);
+}/*# sourceMappingURL=view.css.map */

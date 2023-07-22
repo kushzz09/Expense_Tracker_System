@@ -1,0 +1,106 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  *{
+    margin:0;
+    padding:0;
+  }
+  /*Image css*/
+.bg-img{
+    height:100vh;
+    width:100vw;
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+/*Expense tracker heading css*/
+.one{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: rgb(54, 50, 50);
+    margin-top: 50px;
+    margin-left:50px;
+}
+.two{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: rgb(54, 50, 50);
+    margin-left:50px;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+/*icon css*/
+.fa-solid{
+    margin-top : 3px;
+    margin-left: 5px;
+    padding-left:20px;
+    font-size: 1.5rem;
+    color: rgb(54,50,50);
+    cursor:pointer;
+}
+
+/*Hover in navbar css*/
+a{
+    position:relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    padding: 0 5px;
+}
+a:after{
+    content:"";
+    position:absolute;
+    background-color: rgb(8, 6, 6);
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+}
+a:hover:after{
+    width:100%;
+}
+
+/*Tooltip css*/
+.container i{
+    position: relative;
+}
+
+.container span{
+    position: absolute;
+    height : 37px;
+    width:70px;
+    font-size: 12px;
+    padding: 0 5px 5px 5px;
+    bottom:-40px;
+    left:85%;
+    min-width:15px;
+    color:white;
+    transform:translate(-40%,-50px);
+    line-height: 37px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(16, 86, 143);
+    transition:all 0.3s ease;
+    opacity:0;
+    pointer-events: none;
+}
+
+.container i:hover span{
+    opacity:1;
+    pointer-events: auto;
+    transform:translate(-50%,0);
+}
+.container span:before{
+    content:'';
+    position:absolute;
+    height:15px;
+    width:15px;
+    background: rgb(16, 86, 143);
+    top:-6px;
+    left:35%;
+    transform:translate(-10%) rotate(45deg);
+    z-index:-1;
+}
+ 
